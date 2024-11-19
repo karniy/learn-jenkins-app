@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Bulid') {
+        stage('Build') {
             agent{
                 docker {
                     image 'node: 18-alpine'
@@ -10,10 +10,10 @@ pipeline {
 
                 }                
 
-                }
+            } 
                 
 
-            }
+        }  
              
             steps {
                sh '''
@@ -28,4 +28,4 @@ pipeline {
             }
         }
     }
-
+}  

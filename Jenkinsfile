@@ -37,14 +37,14 @@ pipeline {
         }  
         stage ('Test') {   
             steps{ 
-                sh ''' 
-                echo 'TEST STAGE'
+                
+               sh echo 'TEST STAGE'
 
             }
         
         
 
-        '''
+        }
         }
     }
 }  
